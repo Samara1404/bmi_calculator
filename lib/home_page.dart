@@ -1,3 +1,4 @@
+import 'package:bmi_calculator/calculate_button.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -19,26 +20,18 @@ class _HomePageState extends State<HomePage> {
          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 25),       
         ),
       ),
-      body: Column(
-
-        children: [
-          Expanded(child: Text('s1')),
-          Expanded(child: Text('s2')),
-          Expanded(child: Text('s3')),
-           Container(
-          height:60,
-          width: double.infinity,
-          color: Colors.pink,
-          child: Center(
-            child: Text('CALCULATE', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30,),
-            ),
-          ),
-         ),
-       
-        ], 
-           ),
+      body: Center(
+        child: Column(
+            children: <Widget>[
+             Expanded(child: Text('Text1')), 
+             Expanded(child: Text('Text2')), 
+             Expanded(child: Text('Text2')),
+             CalculateButton(), 
+            ],
           
-    );
+        ),
+      ),
+    ); 
   }
 }
 
